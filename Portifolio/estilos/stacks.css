@@ -1,6 +1,5 @@
 .stacks{
-
-    margin: 0 auto;
+    margin: 0 auto 70px;
     display: flex;
     justify-content: center;
     flex-direction: column;
