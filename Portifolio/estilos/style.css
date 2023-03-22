@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200;300&display=swap');
+html{
+    font-family: 'Encode Sans SC', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('https://img.freepik.com/vetores-gratis/fundo-de-padrao-de-textura-de-marmore-preto_1017-37167.jpg');
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background {
+    height: 100vh;
+    /* background: url('https://img.freepik.com/vetores-gratis/fundo-de-padrao-de-textura-de-marmore-preto_1017-37167.jpg');
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    background-attachment: fixed; */
+}
+
+.intro{
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    z-index: 1;
+    text-align: start;
+}
+.intro h1 {
+    margin: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+.intro h2{
+    margin: 0;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    opacity: .8;
+    margin: 10px 0 30px;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    background:rgba(2,2,2,255);
+}
+::-webkit-scrollbar-thumb {
+    background: aliceblue;
+}
+
+.download-cv-btn {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.9rem 2rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 15px;
+    overflow: hidden;
+    background: #0099ff;
+    color: ghostwhite;
+    outline: 1px solid #0099ff;
+    box-shadow: 0 .1em .4em #0099ff;
+
+   }
+   
+   .download-cv-btn a {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    text-decoration: none;
+    color: #0099ff;
+    text-shadow: 0 0 1em #0099ff;
+   }
+   
+   .download-cv-btn:hover a {
+    color: white;
+   }
+   
+   .download-cv-btn::before,
+   .download-cv-btn::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   .download-cv-btn::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   .download-cv-btn:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+
+   

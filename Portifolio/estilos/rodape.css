@@ -1,0 +1,31 @@
+footer{
+    bottom: 0;
+    position: relative;
+    background: rgba(2,2,2,255);
+    height: 50px;
+    width: 100%;
+}
+
+.links-rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.links-rodape li{
+    list-style-position: none;
+    text-align: center;
+}
+.links-rodape li a{
+    text-decoration: none;
+    color: white;
+    font-size: .9em;
+    letter-spacing: 1;
+}
+
+@media screen and (min-width: 200px) and (max-width:769px){
+    .ocultar{
+        display: none;
+    }
+}

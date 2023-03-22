@@ -1,0 +1,40 @@
+.sobre{
+    background-color: aliceblue;
+    margin: 0 auto;
+    padding: 150px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    z-index: 999;
+}
+.sobre > article{
+    margin: 0 70px;
+    width: 40%;
+    text-align: start;
+}
+.intro-img{
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    height: 320px;
+    width: 320px;
+    outline: 2px solid black;
+    box-shadow: 0 1.5em 1em black;
+}
+@media screen and (min-width: 200px) and (max-width:480px){
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (min-width: 481px) and (max-width:768px) {
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

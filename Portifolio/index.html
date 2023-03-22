@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yann</title>
+    
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/header.css">
+    <link rel="stylesheet" href="estilos/sobre.css">
+    <link rel="stylesheet" href="estilos/stacks.css">
+    <link rel="stylesheet" href="estilos/projetos.css">
+    <link rel="stylesheet" href="estilos/rodape.css">
+    <link rel="stylesheet" href="estilos/icomoon/style.css">
+
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="ocultar"><img src="assets/logo.png" class="logo"></span>
+            <ul class="menu-list">
+                <li class="link"><a href="#sobre">Sobre</a></li>
+                <li class="link"><a href="#stacks">Stacks</a></li>
+                <li class="link"><a href="#projetos">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="background">
+            <article class="intro">
+                <div>
+                    <h1>Yann Kadson</h1>
+                    <h2>Programador</h2>
+                    <button class="download-cv-btn"><a href="assets/Yann_Lima-Curriculo2023.pdf" download>Download CV</a></button>
+                </div>
+                <img />
+            </article>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <article>
+                <h2>Sobre mim</h2>
+                <p>Olá, me chamo Yann e tenho 20 anos. Atualmente estou finalizando o curso técnico de Análise e Desenvolvimento
+                    de Sistemas no Senai, e estou em busca de migrar para a área de tecnologia pois é a carreia que quero seguir
+                    na minha vida. Possuo experiência com projetos acadêmicos e pessoais; no momento estou me especializando em Java
+                    e ReactJS.
+                </p>
+            </article>
+            <div>
+                <img src="assets/eu.jpg" alt="foto de Yann" class="intro-img">
+            </div>
+        </section>
+
+        <section id="stacks" class="stacks">
+            <div>
+                <h2>Stacks</h2>
+            </div>
+            <article class="stacks-container">
+                <article class="card">
+                    <span class="icon-html5"></span>
+                    <h4>HTML5</h4>
+                    <span>Avançado</span>
+                </article>
+                <article class="card">
+                    <div>
+                        <span class="icon-css3"></span>
+                        <span class="icon-sass"></span>
+                        <span class="icon-bootstrap"></span>
+                    </div>
+                    <h4>CSS3 / SASS / Bootstrap</h4>
+                    <span>Intermediário</span>
+                </article>
+                <article class="card">
+                    <span class="icon-javascript"></span>
+                    <h4>Javascript</h4>
+                    <span>Básico</span>
+                </article>
+                <article class="card">
+                    <span class="icon-react"></span>
+                    <h4>ReactJS</h4>
+                    <span>Intermediário</span>
+                </article>
+                <article class="card">
+                    <span class="icon-java"></span>
+                    <h4>JAVA</h4>
+                    <span>Intermediário</span>
+                </article>
+                <article class="card">
+                    <span class="icon-mysql"></span>
+                    <h4>Comandos SQL</h4>
+                    <span>Básico</span>
+                </article>
+            </article>
+        </section>
+
+        <section id="projetos" class="projetos">
+            <div class="title">
+                <h2>Projetos</h2>
+            </div>
+            <article class="carousel">
+                <img src="assets/hamburgueria.png" class="active"></a>
+                <img src="assets/cinehero.png"></a>
+                <img src="assets/angels.png"></a>
+                <img src="assets/instahub.png"></a>
+                
+                <div class="carousel-controls">
+                    <div class="carousel-control" id="prev">&#10094;</div>
+                    <div class="carousel-control" id="next">&#10095;</div>
+                </div>
+            </article>
+
+            <div class="texto"><span>Acesse meu <a href="">Github </a>para ver todos os meus projetos.</span></div>
+        </section>
+
+        
+    </main>
+    <footer class="rodape">
+        <nav>
+            <ul class="links-rodape">
+                <li><a href="https://www.linkedin.com/in/yann-gurgel/"><span class="icon-linkedin2"></span> <span class="ocultar">Linkedin</span></a></li>
+                <li><a href="https://github.com/Yann99999"><span class="icon-github"></span> <span class="ocultar">Github</span></a></li>
+                <li><a href="https://wa.me/5511954842051"><span class="icon-whatsapp"></span> <span class="ocultar">(11) 95484-2051
+                </span></a></li>
+                <li><a href="mailto:yannkgurgel@gmail.com"><span class="icon-gmail"></span> <span class="ocultar">yannkgurgel@gmail.com</span></a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script>
+		let currentSlide = 0;
+		const slides = document.querySelectorAll('.carousel img');
+		const prevButton = document.querySelector('#prev');
+		const nextButton = document.querySelector('#next');
+
+		function showSlide(n) {
+			slides[currentSlide].classList.remove('active');
+			currentSlide = (n + slides.length) % slides.length;
+			slides[currentSlide].classList.add('active');
+		}
+
+		prevButton.addEventListener('click', () => showSlide(currentSlide - 1));
+		nextButton.addEventListener('click', () => showSlide(currentSlide + 1));
+
+		setInterval(() => showSlide(currentSlide + 1), 5000);
+	</script>    
+</body>
+</html>
