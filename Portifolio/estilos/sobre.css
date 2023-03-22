@@ -20,10 +20,11 @@
     gap: 10px;
     align-items: center;
     width: 80vw;
+
 }
-. sobre-article > p{
+.sobre-article > p{
     width: 55%;
-    text-align:center;
+    text-align:start;
     font-size:1.2em;
     letter-spacing; 1;
 }
