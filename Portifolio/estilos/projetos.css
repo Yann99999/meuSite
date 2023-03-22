@@ -26,7 +26,7 @@
     align-items: center;
     margin: 0 auto;
     border-radius: 8px 8px 0 0;
-    box-shadow: 0 0 1em #393939;
+    box-shadow: 0 1em .7em #393939;
 }
 .carousel img {
     width: 100%;
