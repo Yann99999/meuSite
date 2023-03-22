@@ -1,4 +1,4 @@
-header{
+ header{
     background: #020202;
     height: 80px;
     width: 100%;
@@ -64,7 +64,6 @@ header > nav{
         align-items: center;
         justify-content: center;
         margin-top: 5px;
-        margin-right: -18px; 
     }
     .menu-list>.link{
         margin-top: 30px;
