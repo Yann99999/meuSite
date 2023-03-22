@@ -64,7 +64,7 @@ header > nav{
         align-items: center;
         justify-content: center;
         margin-top: 5px;
-        margin-left: -16px;
+        margin-left: -20px;
     }
     .menu-list>.link{
         margin-top: 30px;
@@ -73,7 +73,7 @@ header > nav{
 @media screen and (min-width: 481px) and (max-width:768px) {
     .logo{
         display: none;
-    }
+    } 
 }
 @media screen and (min-width: 769px) and (max-width:1024px) {
     .logo{
