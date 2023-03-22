@@ -75,6 +75,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin-top: 60px;
+      margin-left: -15px;
       justify-content: center;
     }
 }
@@ -84,5 +85,6 @@
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 60px;
         justify-content: center;
+        margin-left: -15px;
       }
 }
