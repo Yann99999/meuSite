@@ -5,7 +5,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-direction: row;
     z-index: 999;
 }
 .sobre > article{
@@ -25,24 +24,28 @@
 @media screen and (min-width: 200px) and (max-width:480px){
     .sobre{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
-.sobre > article{
-    text-align: center;
-flex-direction:column-reverse;
-}
+    .sobre-article{
+        align-items: center;
+        Justify-content: center;
+        margin: 50px auto 0;
+        display:flex:
+    }
 }
 @media screen and (min-width: 481px) and (max-width:768px) {
     .sobre{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
-.sobre > article{
-    text-align: center;
-flex-direction:column-reverse;
-}
+    .sobre-article{
+        align-items: center;
+        justify-content: center;
+        margin: 50px auto 0;
+        display:flex:
+    }
 }
