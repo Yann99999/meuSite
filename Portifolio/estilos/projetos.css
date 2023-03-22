@@ -17,7 +17,7 @@
 }
 
 .carousel {
-    width: 500px;
+    width: 70vw;
     height: 300px;
     position: relative;
     overflow: hidden;
@@ -58,9 +58,9 @@
 }
 
 .texto{
-    align-items: center;
-    justify-content: center;
-    margin: 20px auto 0; 
+    text-align: center;
+    margin: 40px auto;
+    font-size: .8em;
 }
 
 .texto span a{
