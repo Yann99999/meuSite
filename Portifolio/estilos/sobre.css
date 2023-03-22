@@ -35,8 +35,10 @@
         justify-content: center;
         display:flex;
         flex-direction: column-reverse;
-        margin-top:60px;
     }
+    .intro-img{
+        margin-bottom: 50px;
+     }
 }
 @media screen and (min-width: 481px) and (max-width:768px) {
     .sobre > article{
@@ -44,6 +46,9 @@
         justify-content: center;
         display:flex;
         flex-direction: column-reverse;
-        margin-top: 60px;
     }
+.intro-img{
+        margin-bottom: 50px;
+     }
+}
 }
