@@ -17,8 +17,8 @@
 }
 
 .carousel {
-    width: 80vw;
-    height: 440px;
+    width: 70vw;
+    height: 600px;
     position: relative;
     overflow: hidden;
     display: flex;
